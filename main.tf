@@ -1,6 +1,6 @@
-resource "random_pet" "pet1" {
-  length = 5
-}
+#resource "random_pet" "pet1" {
+  #length = 5
+#}
 
 resource "random_pet" "pet2" {
   length = 5
@@ -12,4 +12,8 @@ resource "random_pet" "pet3" {
 
 resource "random_pet" "pet4" {
   length = 5
+}
+
+removed {
+  from = random_pet.pet1
 }
