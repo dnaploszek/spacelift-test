@@ -6,6 +6,6 @@ resource "random_pet" "pet3" {
   length = 5
 }
 
-resource "testing" "spacelift" {
+resource "random_pet" "spacelift" {
   length = 1
 }
