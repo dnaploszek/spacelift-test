@@ -6,9 +6,9 @@ resource "random_pet" "pet2" {
 #  length = 5
 # }
 
-resource "random_pet" "spacelift" {
-  length = 1
-}
+# resource "random_pet" "spacelift" {
+#  length = 1
+# }
 
 resource "random_pet" "spaceliftNew" {
   length = 1
