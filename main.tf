@@ -10,23 +10,7 @@ resource "random_pet" "pet2" {
   length = 1
 }
 
-# resource "random_pet" "pet3" {
-#   length = 1
-# }
-#
-# resource "random_pet" "spacelift" {
-#  length = 1
-# }
-
 resource "random_pet" "spaceliftNewer" {
   length = 1
 }
 
-moved {
-  from = random_pet.spacelift
-  to = random_pet.spaceliftNewer
-}
-
-removed {
-  from = random_pet.pet3
-}
