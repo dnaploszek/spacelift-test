@@ -6,10 +6,6 @@ resource "random_pet" "pet1" {
   length = 1
 }
 
-resource "random_pet" "pet2" {
-  length = 1
-}
-
 resource "random_password" "password" {
   length = 18
 }
