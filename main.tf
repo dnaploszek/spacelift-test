@@ -19,7 +19,7 @@ variable "pet_data" {
   default = {
     name    = "Fluffy"
     species = "dog"
-    age     = "5"
+    age     = "6"
   }
 }
 
