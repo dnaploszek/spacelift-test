@@ -23,7 +23,9 @@ variable "pet_data" {
   }
 }
 
-resource "local_file" "test_json" {
-  filename = "${path.module}/test_pet_data.json"
-  content  = jsonencode(var.pet_data)
+output "json_output" {
+  value = {
+    name = "${path.module}/test_pet_data.json"
+    content  = jsonencode(var.pet_data)
+  }
 }
