@@ -12,6 +12,9 @@ resource "random_pet" "spaceliftNewer" {
   length = 1
 }
 
+resource "random_pet" "one-more-pet" {
+  length = 1
+}
 provider "local" {}
 
 variable "pet_data" {
