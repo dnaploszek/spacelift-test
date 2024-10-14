@@ -11,6 +11,9 @@ resource "random_password" "password" {
 resource "random_pet" "spaceliftNewer" {
   length = 1
 }
+resource "random_pet" "latest_pet" {
+  length = 1
+}
 
 provider "local" {}
 
