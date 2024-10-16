@@ -42,7 +42,7 @@ variable "pet_data2" {
   }
 }
 
-output "json_output" {
+output "json_output2" {
   value = {
     name = "${path.module}/test_pet_data2.json"
     content  = jsonencode(var.pet_data2)
