@@ -22,7 +22,7 @@ variable "pet_data" {
   default = {
     name    = "Fluffy"
     species = "dog"
-    age     = "6"
+    age     = "8"
   }
 }
 
@@ -30,5 +30,21 @@ output "json_output" {
   value = {
     name = "${path.module}/test_pet_data.json"
     content  = jsonencode(var.pet_data)
+  }
+}
+
+variable "pet_data2" {
+  type = map(string)
+  default = {
+    name    = "Fluffy"
+    species = "dog"
+    age     = "6"
+  }
+}
+
+output "json_output" {
+  value = {
+    name = "${path.module}/test_pet_data2.json"
+    content  = jsonencode(var.pet_data2)
   }
 }
