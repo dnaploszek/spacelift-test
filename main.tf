@@ -6,7 +6,7 @@ resource "random_pet" "new-pet-1" {
 }
 
 resource "random_password" "password" {
-  length = 18
+  length = 17
 }
 resource "random_pet" "spaceliftNewer" {
   length = 1
