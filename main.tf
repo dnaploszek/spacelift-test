@@ -48,3 +48,12 @@ output "json_output2" {
     content  = jsonencode(var.pet_data2)
   }
 }
+
+module "spacelift-testing" {
+  source  = "gcp.spacelift.sh/spacelift-io/spacelift-testing/default"
+  version = "1.0.1"
+
+  # Optional inputs
+  # secret       = string
+  # super_secret = string
+}
