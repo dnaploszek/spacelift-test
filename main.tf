@@ -72,3 +72,7 @@ resource "random_pet" "pet66" {
   length = 5
 }
 
+resource "random_pet" "pet77" {
+  length = 5
+}
+
