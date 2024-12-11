@@ -48,3 +48,7 @@ output "json_output2" {
     content  = jsonencode(var.pet_data2)
   }
 }
+resource "random_pet" "pet11" {
+  length = 5
+}
+
